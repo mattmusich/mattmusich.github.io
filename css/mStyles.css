@@ -8,11 +8,15 @@
 }
 
 .mainText {
-    color: 403D39;   
+    color: #403D39;   
+}
+
+.highText {
+    color: #000000;   
 }
 
 .rowFrame {
-    background-color: #E3E9F2 ;
+    background-color: #FFFFFF ;
     padding-left: 20px;
     border: 2px solid #777;
     border-radius: 25px;
