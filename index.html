@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mStyles.css" rel="stylesheet">
+    <script src="js/jquery-1.12.0.min.js"></script>  
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="background-color: #FDFDFF;">
     
       <div>
 
@@ -25,9 +27,14 @@
           <div id="mHeader" class="container">
 
 
-              <div class="row" style="border-bottom: 2px solid #ccc;">
-                  <div class="col-md-6" style="color: #011627;"><h1>Matthew Musich</h1></div>
-                  <div class="col-md-6" style="margin-top: 15px; color: #011627;"><h3>GitHub Linkedin Resume Email</h3></div>
+              <div class="row" style="border-bottom: 2px solid #777;">
+                  <div class="col-md-6" ><h1><span class="mainText">Matthew Musich</span></h1></div>
+                  <div class="col-md-6" style="margin-top: 15px; text-align: right;"><h4><span class="mainText">
+                      <a id="popoverData" class="btn" target="_blank" href="https://github.com/mattmusich" data-content="GitHub" rel="popover" data-placement="bottom" data-trigger="hover"><img src="source/GitHub-Mark-32px.png" alt="GitHub"></a>
+                      <a id="popoverData2" class="btn" target="_blank" href="https://www.linkedin.com/in/matthew-musich-1a254782" data-content="Linkedin" rel="popover" data-placement="bottom" data-trigger="hover"><img src="source/In-Black-34px-R.png" alt="Linkedin"></a>
+                      <a id="popoverData3" class="btn" target="_blank" href="source/MatthewMusichResume.pdf" data-content="Resume" rel="popover" data-placement="bottom" data-trigger="hover"><img src="source/resume.png" style="width: 32px; height: 32px;" alt="Resume"></a>
+                      <a id="popoverData4" class="btn" target="_blank" href="mailto:matthew.musich1@gmail.com" data-content="Email" rel="popover" data-placement="bottom" data-trigger="hover"><img src="source/email.png" alt="Linkedin"></a>
+                      </span></h4></div>
               </div>
               
               
@@ -39,10 +46,67 @@
 <!-- CONTENT -->
           <div id="mContent" class="container">
 
+          <div style="padding-top: 20px; padding-bottom: 20px;">
+              <h1><span class="mainText">Projects</span></h1>
+          </div>
               
-              STUFF
+            <div class="row rowFrame" >
+              <div class="col-md-3">
+                <img class="imageBorder" src="source/Marist_College_Seal_White.png" alt="marist">
               
+              </div>
+                
+              <div class="col-md-9">
+                <h3><span class="mainText">Marist College - Transfer Evaluations</span> <small>React, Javascript, jQuery, HTML5/Boostrap</small></h3>
+                  <h4>Source: <a href="https://www.capping.xyz/login.html">capping.xyz</a></h4>
+                  <h4>Web application that allows possible transfer students to quickly and easily determine how many credits will transfer to Marist College. <br> This was a group project for Marist capping, where I was tasked with front-end development</h4>
+                  
+              </div>
+          </div>    
               
+            <div style="padding-top: 20px;">
+                <h1><span class="mainText"></span></h1>
+          </div>  
+              
+          <div class="row rowFrame">
+              <div class="col-md-3">
+                <img class="imageBorder" src="source/compiler.jpg" alt="compiler">
+              
+              </div>
+                
+              <div class="col-md-9">
+                <h3><span class="mainText">Alan++ Compiler</span> <small>Java</small></h3>
+                  <h4>Source: <a href="https://github.com/mattmusich/JavaCompiler">Github</a></h4>
+                  <h4>Processes Alan++, a custom language : <a href="http://labouseur.com/courses/compilers/grammar.pdf">Grammar</a> <br> 
+                      Output can run on a version of a 6502a OS : <a href="http://labouseur.com/commondocs/operating-systems/SvegOS/public_html/index.html">OS</a> <br>
+                      </h4>
+                  
+              </div>
+          </div>    
+             
+          <div style="padding-top: 20px;">
+                <h1><span class="mainText"></span></h1>
+          </div>
+              
+           <div class="row rowFrame" >
+              <div class="col-md-3">
+                <img class="imageBorder" src="source/tripletriad.jpg" alt="tripletriad">
+              
+              </div>
+                
+              <div class="col-md-9">
+                <h3><span class="mainText">TripleTriad AI Command Line</span> <small>Java</small></h3>
+                  <h4>Source: <a href="https://github.com/mattmusich/TripleTriadAiCLI">Github</a></h4>
+                  <h4>A Java Implementation of the Final Fantasy Card Game, <a href="http://finalfantasy.wikia.com/wiki/Triple_Triad">Triple Triad</a> <br>
+                      Paired with an AI to play significantly better than a random choice</h4>
+                  
+              </div>
+          </div>       
+              
+          
+          
+              
+                    
               
               
               
@@ -57,5 +121,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+      
+      <script>
+      $('#popoverData').popover();
+      $('#popoverData2').popover();
+      $('#popoverData3').popover();
+      $('#popoverData4').popover();
+      </script>
+      
   </body>
 </html>
