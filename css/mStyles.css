@@ -4,7 +4,7 @@
     background-color: #686963; 
     padding: 10px; 
     width: 200px;
-    height: 200px;    
+    height: 200px;   
 }
 
 .mainText {
@@ -23,3 +23,23 @@
     padding-top: 20px;
     padding-bottom: 20px;   
 }
+
+@font-face {
+   font-family: ProximaNovaExtraBold; 
+   src: url('/fonts/ProximaNova-Extrabold.otf');
+} 
+
+@font-face {
+   font-family: ProximaNovaBold; 
+   src: url('/fonts/ProximaNova-Bold.otf');
+} 
+
+@font-face {
+   font-family: ProximaNovaSemiBoldItalic; 
+   src: url('/fonts/ProximaNova-SemiboldItalic.otf');
+} 
+
+@font-face {
+   font-family: ProximaNovaRegular; 
+   src: url('/fonts/ProximaNova-Regular.otf');
+} 
